@@ -21,7 +21,7 @@
   .field .fv { font-size: 16px; line-height: 22px; font-weight: 600; }
   .field .fv.memo { font-weight: 400; font-size: 15px; }
   .navbtn { height: 40px; font-size: 15px; }
-  .obtn { height: 40px; font-size: 14px; }
+  .obtn { height: 40px; font-size: 14px; flex:1; }
   .sub { font-size: 12px; color: var(--dim); margin-top: -4px; }
 </style></head><body>
 <div class="screen app-pinback light">
@@ -33,11 +33,11 @@
   <div class="scrim"></div>
   <div class="sheet">
     <div class="handle"></div>
-    <div class="st">저장했어요</div>
-    <div class="sub">방금 · 오차 약 12m</div>
+    <div class="st" style="display:flex;align-items:center;gap:8px"><span style="display:inline-flex;width:24px;height:24px;border-radius:12px;align-items:center;justify-content:center;background:color-mix(in srgb, var(--ok, #1a7f4b) 14%, transparent);color:var(--ok, #1a7f4b);font-size:14px"><i data-icon="check"></i></span>저장했어요</div>
+    <div class="sub">오차 약 12m · 이름과 메모는 나중에 고쳐도 돼요</div>
     <div class="field focus"><div class="fl">이름</div><div class="fv">창가 자리 좋은 카페</div></div>
-    <div class="field"><div class="fl">메모</div><div class="fv memo">2층 · 콘센트는 창가 쪽</div></div>
-    <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진</div><div class="navbtn" style="flex:1">저장</div></div>
+    <div class="field"><div class="fl">메모 (선택)</div><div class="fv memo">2층 · 콘센트는 창가 쪽</div></div>
+    <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진 남기기</div><div class="navbtn" style="flex:1"><i data-icon="check"></i>완료</div></div>
   </div>
 </div>
 <script src="../_icons.js"></script>
