@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1800,h=1330,scale=1">
+<title>장면 3 · 펼친 화면 — 설정에서 내 차 고르기</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="../_app.css">
+<style>
+  /* 폴드8 펼친 화면 가로 1.35:1 — 400 x 296dp 를 4.5배 */
+  body { margin:0; background:#000; }
+  .screen { zoom: 4.5; width: 400px; height: 295.5px; border-radius: 0; }
+  .status-bar { height: 22px; font-size: 11px; padding: 0 14px; }
+  .app-bar { height: 40px; gap: 8px; padding: 0 12px; }
+  .app-bar .title { font-size: 17px; }
+  .screen > .content { padding: 4px 28px 4px; gap: 4px; }
+  .lbl { margin: 2px 2px 0; font-size: 13px; }
+  .sw { padding: 6px 12px; }
+  .sw .a { font-size: 15px; }
+  .dev { padding: 6px 12px; }
+  .dev .n { font-size: 15px; } .dev .m { font-size: 12.5px; font-family: inherit; }
+</style></head><body>
+<div class="screen app-pinback light">
+  <div class="status-bar" data-time="8:40"></div>
+  <div class="app-bar"><span class="icon-btn"><i data-icon="arrow-left"></i></span><span class="title">설정</span><span class="spacer"></span><span class="theme-btn"><i data-icon="sun"></i><span>자동</span></span></div>
+  <div class="content">
+    <div class="lbl" style="margin-top:0">주차 자동 저장</div>
+    <div class="box"><div class="sw"><div class="grow"><div class="a">차에서 내리면 자동으로 저장</div></div><span class="switch on"></span></div></div>
+    <div class="lbl">내 차 블루투스</div>
+    <div class="box">
+      <div class="dev on"><i data-pi="car"></i><div class="grow"><div class="n">내 차 오디오</div><div class="m">페어링됨 · 선택함</div></div><span class="radio on"><i data-icon="check"></i></span></div>
+      <div class="dev"><i data-icon="bluetooth"></i><div class="grow"><div class="n">무선 이어폰</div><div class="m">페어링됨</div></div><span class="radio"></span></div>
+    </div>
+  </div>
+</div>
+<script src="../_icons.js"></script>
+</body></html>

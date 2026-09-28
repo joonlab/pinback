@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1296,h=1800,scale=1">
+<title>장면 1 · 커버 화면 — 지금 위치 저장 후 이름·메모 시트</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="../_app.css">
+<style>
+  /* 폴드8 커버 영역 0.72:1 — 270 x 375dp 를 4.8배(평소보다 UI 를 크게) */
+  body { margin:0; background:#000; }
+  .screen { zoom: 4.8; width: 270px; height: 375px; border-radius: 0; }
+  .status-bar { height: 22px; font-size: 11px; padding: 0 14px; }
+  .app-bar { height: 40px; gap: 8px; padding: 0 12px; }
+  .app-bar .title { font-size: 17px; }
+  .screen > .content { padding: 8px 12px; }
+  .savebtn { height: 46px; font-size: 15px; }
+  .sheet { padding: 8px 14px 18px; gap: 8px; }
+  .sheet .st { font-size: 18px; }
+  .field { padding: 6px 11px; }
+  .field .fl { font-size: 11px; }
+  .field .fv { font-size: 16px; line-height: 22px; font-weight: 600; }
+  .field .fv.memo { font-weight: 400; font-size: 15px; }
+  .navbtn { height: 40px; font-size: 15px; }
+  .obtn { height: 40px; font-size: 14px; }
+  .sub { font-size: 12px; color: var(--dim); margin-top: -4px; }
+</style></head><body>
+<div class="screen app-pinback light">
+  <div class="status-bar" data-time="4:12"></div>
+  <div class="app-bar"><img class="mark" data-app="pinback" alt=""><span class="title">핀백</span><span class="spacer"></span><span class="theme-btn"><i data-icon="sun"></i></span></div>
+  <div class="content">
+    <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+  </div>
+  <div class="scrim"></div>
+  <div class="sheet">
+    <div class="handle"></div>
+    <div class="st">저장했어요</div>
+    <div class="sub">방금 · 오차 약 12m</div>
+    <div class="field focus"><div class="fl">이름</div><div class="fv">창가 자리 좋은 카페</div></div>
+    <div class="field"><div class="fl">메모</div><div class="fv memo">2층 · 콘센트는 창가 쪽</div></div>
+    <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진</div><div class="navbtn" style="flex:1">저장</div></div>
+  </div>
+</div>
+<script src="../_icons.js"></script>
+</body></html>
