@@ -152,7 +152,13 @@ Claude Code 와 며칠에 걸쳐 만들었습니다. 첫날 아이폰 단축어�
 - **브로드캐스트 수신기는 위치 콜백을 기다려 줘야 한다.** `ACL_DISCONNECTED` 를 받자마자 끝내면 위치를 다듬기 전에 프로세스가 죽을 수 있습니다. `goAsync()` 로 35초를 붙잡아 두고(백그라운드 브로드캐스트 ANR 한도 60초 안), 처음 9초로 뒀던 값을 늘렸습니다.
 - **개인 흔적은 기본값에 숨는다.** 처음 버전은 제 차 블루투스 이름이 코드 기본값에 박혀 있었습니다. 공개본에서는 빌드 설정(`pinback.defaultCarName`)으로 빼고 기본은 빈 값으로 두었습니다.
 
-<!-- VIDEO -->
+<!-- VIDEO:START -->
+### 홍보 영상
+
+[![홍보 영상 미리보기 — 누르면 전체 영상(가로 16:9, 72초)이 재생됩니다](docs/images/video-preview.webp)](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/pinback/pinback_16x9.mp4)
+
+▶ [가로 16:9 · 72초](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/pinback/pinback_16x9.mp4) · ▶ [세로 9:16 · 62초](https://pub-81d14e6ebfb841109968e9c0ee057d1b.r2.dev/android-mac-lab/videos/pinback/pinback_9x16.mp4) — 영상 속 화면은 설명용 목업이고, 책상 사진은 AI로 만든 배경입니다.
+<!-- VIDEO:END -->
 
 ## 관련 프로젝트
 
