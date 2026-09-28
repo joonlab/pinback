@@ -6,11 +6,14 @@
 <script src="https://mockup-kit.invalid/kit.js"></script>
 <link rel="stylesheet" href="_app.css">
 <style>
-  .layout { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:44px; }
-  .intro { width:372px; display:flex; flex-direction:column; gap:14px; }
+  .layout { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:40px; }
+  .intro { width:340px; display:flex; flex-direction:column; gap:14px; }
   .intro .app { display:flex; align-items:center; gap:14px; }
   .intro .app img { width:64px; height:64px; border-radius:16px; }
   .intro .step { padding:12px 14px; }
+  /* 펼침 940x710 가로: 상세 칸 높이 594 에 맞춰 사진·간격을 줄인다 */
+  .fold-open .pane + .pane { gap:8px !important; }
+  .fold-open .photo { height:96px; }
 </style>
 </head><body>
 <div class="canvas app-pinback desk-accent">
@@ -23,7 +26,7 @@
     </div>
 
     <div>
-      <div class="fold-open light" style="--zoom:.78">
+      <div class="fold-open light" style="--zoom:.72">
         <div class="screen">
           <div class="status-bar" data-time="2:30"></div>
           <div class="app-bar">
@@ -65,7 +68,7 @@
     </div>
 
     <div>
-      <div class="fold-cover dark" style="--zoom:.78">
+      <div class="fold-cover dark" style="--zoom:.72">
         <div class="screen">
           <div class="status-bar" data-time="2:30"></div>
           <div class="app-bar">

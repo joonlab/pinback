@@ -1,16 +1,18 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8">
-<meta name="shot" content="w=1800,h=1296,scale=1">
+<meta name="shot" content="w=1800,h=1454,scale=1">
 <title>장면 1 · 맥 화면 — 카페에서 작업 중</title>
 <link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
 <script src="https://mockup-kit.invalid/kit.js"></script>
 <link rel="stylesheet" href="../_app.css">
 <style>
   body { margin:0; background:#000; }
-  .desk { zoom: 2.25; width: 800px; height: 576px; position: relative; overflow: hidden;
+  .desk { zoom: 2.25; width: 800px; height: 646px; position: relative; overflow: hidden;
     background: radial-gradient(120% 90% at 20% 10%, #D6E3F5 0%, #A9C0E0 45%, #7893BC 100%); }
   .mac-menubar { font-size: 14px; }
-  .notes { position: absolute; left: 70px; top: 52px; width: 660px; height: 490px; }
+  /* G 배경의 노치가 메뉴 글자를 가리지 않게 「보기」부터 노치 오른쪽으로 */
+  .mac-menubar > span:nth-child(5) { margin-left: 130px; }
+  .notes { position: absolute; left: 70px; top: 56px; width: 660px; height: 550px; }
   .notes .mac-split { grid-template-columns: 170px 1fr; }
   .note-item { padding: 8px 10px; border-radius: 8px; font-size: 14px; line-height: 20px; }
   .note-item.on { background: #F4D26B; }
