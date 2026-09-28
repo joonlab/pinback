@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>저장 흐름</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="_app.css">
+<style>
+  .head { position:absolute; top:44px; left:0; right:0; text-align:center; }
+  .layout { position:absolute; top:130px; left:0; right:0; bottom:0; display:flex; align-items:flex-start; justify-content:center; gap:34px; }
+  .scrim { z-index:40; }
+  .snackbar { position:absolute; left:12px; right:12px; bottom:28px; z-index:30; }
+</style>
+</head><body>
+<div class="canvas app-pinback desk-accent">
+  <div class="head"><div class="cap-title">누르고, 이름 붙이고, 필요하면 다시 잡기</div><div class="cap-sub">커버 화면 한 손 조작 기준 · 저장부터 되돌리기까지</div></div>
+  <div class="layout">
+
+    <div>
+      <div class="fold-cover light" style="--zoom:.74"><div class="screen">
+        <div class="status-bar" data-time="1:05"></div>
+        <div class="app-bar"><img class="mark" data-app="pinback" alt=""><span class="title">핀백</span><span class="spacer"></span><span class="icon-btn"><i data-icon="settings"></i></span><span class="theme-btn"><i data-icon="sun"></i></span></div>
+        <div class="content" style="gap:8px">
+          <div class="savebtn busy"><i data-icon="refresh"></i>위치 잡는 중…</div>
+          <div class="hint">바로 잡히면 곧 저장돼요. 실내나 지하에선 30초까지 걸릴 수 있어요.</div>
+          <div class="lbl">저장한 장소 2곳</div>
+          <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">민지랑 만날 카페</div><div class="mt">어제 · 2.4km</div></div></div>
+          <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">처음 가 본 국숫집</div><div class="mt">3일 전 · 5.1km</div></div></div>
+        </div>
+        <div class="nav-handle"></div>
+      </div></div>
+      <div class="device-label">1 · 한 번 누르면 바로 위치 잡기</div>
+    </div>
+
+    <div>
+      <div class="fold-cover light" style="--zoom:.74"><div class="screen">
+        <div class="status-bar" data-time="1:05"></div>
+        <div class="app-bar"><img class="mark" data-app="pinback" alt=""><span class="title">핀백</span><span class="spacer"></span><span class="icon-btn"><i data-icon="settings"></i></span><span class="theme-btn"><i data-icon="sun"></i></span></div>
+        <div class="content" style="gap:8px">
+          <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+          <div class="lbl">저장한 장소 3곳</div>
+          <div class="prow sel"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">9월 28일 오후 1:05</div><div class="mt">방금 · 여기서 0m</div></div></div>
+        </div>
+        <div class="scrim"></div>
+        <div class="sheet">
+          <div class="handle"></div>
+          <div class="st">저장했어요</div>
+          <div class="field focus"><div class="fl">이름</div><div class="fv">회의 끝나고 갈 서점</div></div>
+          <div class="field"><div class="fl">메모</div><div class="fv" style="color:var(--dim)">2층 창가 쪽 입구</div></div>
+          <div class="hint">주소를 받아 오면 이름이 주소로 바뀌어요. 직접 고친 이름은 그대로 둬요.</div>
+          <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진 남기기</div><div class="navbtn" style="flex:1; height:42px">저장</div></div>
+        </div>
+        <div class="nav-handle" style="z-index:42"></div>
+      </div></div>
+      <div class="device-label">2 · 이름·메모 시트</div>
+    </div>
+
+    <div>
+      <div class="fold-cover light" style="--zoom:.74"><div class="screen">
+        <div class="status-bar" data-time="1:07"></div>
+        <div class="app-bar"><span class="icon-btn"><i data-icon="arrow-left"></i></span><span class="title">장소</span><span class="spacer"></span><span class="theme-btn"><i data-icon="sun"></i></span></div>
+        <div class="content" style="gap:10px">
+          <div class="row" style="align-items:flex-start"><div class="grow"><div class="dh" style="font-size:20px; line-height:26px">회의 끝나고 갈 서점</div><div class="dsub">2분 전 저장 · 여기서 20m</div></div><span class="pill" style="margin-top:3px">직접 저장</span></div>
+          <div class="warnbox">
+            <div class="t"><i data-icon="alert"></i>오차가 커요(약 120m)</div>
+            <div class="b">하늘이 보이는 곳에서 위치를 다시 잡아 보세요. 새 장소를 만들지 않고 이 장소의 위치만 바꿔요.</div>
+            <div class="obtn sm" style="margin-top:10px; display:inline-flex"><i data-pi="locate"></i>위치 다시 잡기</div>
+          </div>
+          <div class="navbtn"><i data-pi="navigation"></i>길찾기</div>
+          <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진</div><div class="obtn"><i data-icon="share"></i>공유</div></div>
+          <div class="info">
+            <div class="r"><i data-icon="map-pin"></i><span class="k">오차</span><span class="v">약 120m</span></div>
+            <div class="r"><i data-icon="clock"></i><span class="k">저장</span><span class="v">오후 1:05</span></div>
+          </div>
+        </div>
+        <div class="nav-handle"></div>
+      </div></div>
+      <div class="device-label">3 · 오차가 크면 위치 다시 잡기</div>
+    </div>
+
+    <div>
+      <div class="fold-cover light" style="--zoom:.74"><div class="screen">
+        <div class="status-bar" data-time="1:10"></div>
+        <div class="app-bar"><img class="mark" data-app="pinback" alt=""><span class="title">핀백</span><span class="spacer"></span><span class="icon-btn"><i data-icon="settings"></i></span><span class="theme-btn"><i data-icon="sun"></i></span></div>
+        <div class="content" style="gap:8px">
+          <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+          <div class="lbl">저장한 장소 2곳</div>
+          <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">민지랑 만날 카페</div><div class="mt">어제 · 2.4km</div></div></div>
+          <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">처음 가 본 국숫집</div><div class="mt">3일 전 · 5.1km</div></div></div>
+        </div>
+        <div class="snackbar">「회의 끝나고 갈 서점」 장소를 지웠어요<b>실행 취소</b></div>
+        <div class="nav-handle"></div>
+      </div></div>
+      <div class="device-label">4 · 지워도 잠깐은 되돌리기</div>
+    </div>
+
+  </div>
+</div>
+<script src="_icons.js"></script>
+</body></html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- lucide navigation (ISC) — 24 격자를 108 캔버스 가운데 36dp 로 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <group android:translateX="36" android:translateY="36" android:scaleX="1.5" android:scaleY="1.5">
+        <path android:pathData="M3 11L22 2L13 21L11 13Z" android:strokeColor="#FFFFFFFF" android:strokeWidth="2" android:strokeLineCap="round" android:strokeLineJoin="round" android:fillColor="#00000000"/>
+    </group>
+</vector>

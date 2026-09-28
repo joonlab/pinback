@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>핀백 구성</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="_app.css">
+<style>
+  .layout { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:44px; }
+  .intro { width:372px; display:flex; flex-direction:column; gap:14px; }
+  .intro .app { display:flex; align-items:center; gap:14px; }
+  .intro .app img { width:64px; height:64px; border-radius:16px; }
+  .intro .step { padding:12px 14px; }
+</style>
+</head><body>
+<div class="canvas app-pinback desk-accent">
+  <div class="layout">
+    <div class="intro">
+      <div class="app"><img data-app="pinback" alt=""><div><div class="cap-title">핀백</div><div class="cap-sub" style="margin-top:0">저장하고, 다시 찾아가기</div></div></div>
+      <div class="step"><div class="no">1</div><div><div class="h">한 번 눌러 저장</div><div class="p">지금 위치를 바로 핀으로. 주소를 받아 오면 이름이 주소로 바뀌어요.</div></div></div>
+      <div class="step"><div class="no">2</div><div><div class="h">차에서 내리면 자동 저장</div><div class="p">고른 차 블루투스가 끊기는 순간을 「주차」로 저장하고 알림을 띄워요.</div></div></div>
+      <div class="step"><div class="no">3</div><div><div class="h">도보 길찾기로 돌아가기</div><div class="p">국내는 네이버 지도, 해외나 미설치면 Google 지도로 열어요.</div></div></div>
+    </div>
+
+    <div>
+      <div class="fold-open light" style="--zoom:.78">
+        <div class="screen">
+          <div class="status-bar" data-time="2:30"></div>
+          <div class="app-bar">
+            <img class="mark" data-app="pinback" alt="">
+            <span class="title">핀백</span>
+            <span class="spacer"></span>
+            <span class="icon-btn"><i data-icon="settings"></i></span>
+            <span class="theme-btn"><i data-icon="sun"></i><span>자동</span></span>
+          </div>
+          <div class="two-pane list-detail">
+            <div class="pane">
+              <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+              <div class="lbl">저장한 장소 4곳</div>
+              <div class="prow park sel"><div class="tile"><i data-pi="car"></i></div><div class="grow" style="min-width:0"><div class="nm">행복마트 주차장 B2</div><div class="mt">12분 전 · 여기서 180m</div></div><span class="pill park">주차</span></div>
+              <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">민지랑 만날 카페</div><div class="mt">어제 · 2.4km</div></div></div>
+              <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">처음 가 본 국숫집</div><div class="mt">3일 전 · 5.1km</div></div></div>
+              <div class="prow park"><div class="tile"><i data-pi="car"></i></div><div class="grow" style="min-width:0"><div class="nm">캠핑장 입구</div><div class="mt">9월 20일 · 48km</div></div><span class="pill park">주차</span></div>
+            </div>
+            <div class="pane" style="gap:10px">
+              <div class="row" style="align-items:flex-start"><div class="grow"><div class="dh">행복마트 주차장 B2</div><div class="dsub">12분 전 저장 · 여기서 180m</div></div><span class="pill park" style="margin-top:4px">주차</span></div>
+              <div class="navbtn"><i data-pi="navigation"></i>길찾기</div>
+              <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진</div><div class="obtn"><i data-icon="share"></i>공유</div><div class="obtn"><i data-icon="pencil"></i>고치기</div></div>
+              <div class="lbl">사진 1장</div>
+              <div class="photo"><div class="pillar">B2 · C-14</div></div>
+              <div class="lbl">메모</div>
+              <div class="info"><div class="r" style="font-size:14px">엘리베이터 앞에서 두 번째 칸</div></div>
+              <div class="lbl">위치</div>
+              <div class="info">
+                <div class="r"><i data-pi="locate"></i><span class="k">좌표</span><span class="v">37.500000, 127.000000</span></div>
+                <div class="r"><i data-icon="map-pin"></i><span class="k">오차</span><span class="v">약 8m</span></div>
+                <div class="r"><i data-icon="clock"></i><span class="k">저장</span><span class="v">9월 28일 오후 2:18</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">펼친 화면 · 목록 | 상세</div>
+    </div>
+
+    <div>
+      <div class="fold-cover dark" style="--zoom:.78">
+        <div class="screen">
+          <div class="status-bar" data-time="2:30"></div>
+          <div class="app-bar">
+            <img class="mark" data-app="pinback" alt="">
+            <span class="title">핀백</span>
+            <span class="spacer"></span>
+            <span class="icon-btn"><i data-icon="settings"></i></span>
+            <span class="theme-btn"><i data-icon="moon"></i></span>
+          </div>
+          <div class="content" style="gap:8px">
+            <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+            <div class="lbl">저장한 장소 4곳</div>
+            <div class="prow park"><div class="tile"><i data-pi="car"></i></div><div class="grow" style="min-width:0"><div class="nm">행복마트 주차장 B2</div><div class="mt">12분 전 · 180m</div></div><span class="pill park">주차</span></div>
+            <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">민지랑 만날 카페</div><div class="mt">어제 · 2.4km</div></div></div>
+            <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">처음 가 본 국숫집</div><div class="mt">3일 전 · 5.1km</div></div></div>
+            <div class="prow park"><div class="tile"><i data-pi="car"></i></div><div class="grow" style="min-width:0"><div class="nm">캠핑장 입구</div><div class="mt">9월 20일 · 48km</div></div><span class="pill park">주차</span></div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">커버 화면 · 한 칸</div>
+    </div>
+  </div>
+</div>
+<script src="_icons.js"></script>
+</body></html>

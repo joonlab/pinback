@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">핀백</string>
+    <string name="sc_save_short">지금 위치 저장</string>
+    <string name="sc_save_long">지금 있는 곳을 저장</string>
+    <string name="sc_nav_short">마지막 장소로</string>
+    <string name="sc_nav_long">마지막 장소로 길찾기</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 「핀백」 아이콘을 길게 누르면 나오는 바로가기 -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="save_here"
+        android:enabled="true"
+        android:icon="@drawable/sc_save"
+        android:shortcutShortLabel="@string/sc_save_short"
+        android:shortcutLongLabel="@string/sc_save_long">
+        <intent
+            android:action="kr.joonlab.pinback.SAVE"
+            android:targetPackage="kr.joonlab.pinback"
+            android:targetClass="kr.joonlab.pinback.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="navigate_last"
+        android:enabled="true"
+        android:icon="@drawable/sc_nav"
+        android:shortcutShortLabel="@string/sc_nav_short"
+        android:shortcutLongLabel="@string/sc_nav_long">
+        <intent
+            android:action="kr.joonlab.pinback.NAVIGATE_LAST"
+            android:targetPackage="kr.joonlab.pinback"
+            android:targetClass="kr.joonlab.pinback.NavActivity" />
+    </shortcut>
+</shortcuts>

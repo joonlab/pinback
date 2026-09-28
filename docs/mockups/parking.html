@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>주차 자동 저장</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="_app.css">
+<style>
+  .layout { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:40px; }
+  .flow { width:330px; display:flex; flex-direction:column; gap:12px; }
+  .flow .step { padding:13px 15px; }
+  .arrow { text-align:center; color:var(--dim); font-size:18px; line-height:1; }
+  .notif .notif-title { font-size:14.5px; }
+  .shade { background:color-mix(in srgb, var(--bg) 60%, var(--panel2)); }
+</style>
+</head><body>
+<div class="canvas app-pinback desk-accent">
+  <div class="layout">
+    <div class="flow">
+      <div class="cap-title">차에서 내리면<br>알아서 저장</div>
+      <div class="cap-sub">아이폰 단축어로 하던 «주차 위치 기억»을 앱 하나로 옮겼습니다.</div>
+      <div class="step"><div class="no">1</div><div><div class="h">시동을 끈다</div><div class="p">설정에서 고른 차 블루투스의 연결이 끊겨요(ACL_DISCONNECTED).</div></div></div>
+      <div class="step"><div class="no">2</div><div><div class="h">위치를 두 단계로 잡는다</div><div class="p">폰이 알던 마지막 위치로 먼저 저장하고, 새로 잡힌 위치가 더 정확하면 바꿔요.</div></div></div>
+      <div class="step"><div class="no">3</div><div><div class="h">알림에서 바로 사진</div><div class="p">GPS는 층을 모르니 기둥 번호를 한 장 남겨 둬요. 1분 30초 안의 중복 끊김은 무시해요.</div></div></div>
+    </div>
+
+    <div>
+      <div class="fold-open dark" style="--zoom:.76">
+        <div class="screen">
+          <div class="status-bar" data-time="6:42"></div>
+          <div class="app-bar">
+            <span class="icon-btn"><i data-icon="arrow-left"></i></span>
+            <span class="title">설정</span>
+            <span class="spacer"></span>
+            <span class="theme-btn"><i data-icon="moon"></i><span>자동</span></span>
+          </div>
+          <div class="content" style="gap:8px; padding:12px 110px 16px">
+            <div class="lbl" style="margin-top:0">주차 자동 저장</div>
+            <div class="box"><div class="sw"><div class="grow"><div class="a">차에서 내리면 자동으로 저장</div><div class="b">차 블루투스가 끊기는 순간(시동을 끈 순간) 그 자리를 「주차」로 저장하고 알림을 띄워요.</div></div><span class="switch on"></span></div></div>
+            <div class="lbl">내 차 블루투스</div>
+            <div class="box">
+              <div class="dev on"><i data-pi="car"></i><div class="grow"><div class="n">내 차 오디오</div><div class="m">페어링됨</div></div><span class="radio on"><i data-icon="check"></i></span></div>
+              <div class="dev"><i data-icon="bluetooth"></i><div class="grow"><div class="n">무선 이어폰</div><div class="m">페어링됨</div></div><span class="radio"></span></div>
+              <div class="dev"><i data-icon="bluetooth"></i><div class="grow"><div class="n">노트북</div><div class="m">페어링됨</div></div><span class="radio"></span></div>
+            </div>
+            <div class="hint">같은 주차가 두 번 저장되지 않게, 끊김이 1분 30초 안에 또 오면 무시해요.</div>
+            <div class="lbl">권한</div>
+            <div class="box">
+              <div class="perm"><i data-pi="locate"></i><div class="grow">정확한 위치<div class="s"><i class="d"></i>허용됨</div></div></div>
+              <div class="perm"><i data-icon="map-pin"></i><div class="grow">백그라운드 위치 · 항상 허용<div class="s"><i class="d"></i>허용됨</div></div></div>
+              <div class="perm"><i data-icon="bluetooth"></i><div class="grow">근처 기기<div class="s"><i class="d"></i>허용됨</div></div></div>
+              <div class="perm"><i data-icon="bell"></i><div class="grow">알림<div class="s"><i class="d"></i>허용됨</div></div></div>
+            </div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">펼친 화면 · 설정에서 내 차 고르기</div>
+    </div>
+
+    <div>
+      <div class="fold-cover light" style="--zoom:.76">
+        <div class="screen shade">
+          <div class="status-bar" data-time="6:42"></div>
+          <div class="content" style="gap:10px; padding-top:8px">
+            <div class="lock-clock"><div class="t">6:42</div><div class="d">9월 28일 월요일</div></div>
+            <div class="notif-stack">
+              <div class="notif heads-up">
+                <div class="notif-head"><img data-app="pinback" alt=""><span>핀백 · 지금</span></div>
+                <div class="notif-title">주차 위치를 저장했어요 · 행복마트 주차장 B2</div>
+                <div class="notif-body">오차 약 8m · 층·기둥 번호를 사진으로 남겨 두세요</div>
+                <div class="notif-actions"><span>길찾기</span><span>사진 남기기</span></div>
+              </div>
+              <div class="notif">
+                <div class="notif-head"><i data-icon="calendar"></i><span>캘린더 · 10분 전</span></div>
+                <div class="notif-title">장보기</div>
+                <div class="notif-body">오후 7:00 · 행복마트</div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">커버 화면 · 주차 알림</div>
+    </div>
+  </div>
+</div>
+<script src="_icons.js"></script>
+</body></html>

@@ -1,0 +1,10 @@
+# android/local.properties 로 복사해서 쓰세요 (local.properties 는 .gitignore 대상).
+#   cp android/local.properties.example android/local.properties
+
+# Android SDK 위치 (Android Studio 가 자동으로 채워 주기도 합니다)
+sdk.dir=/path/to/Android/sdk
+
+# 설정 화면에서 차를 고르기 전까지 쓸 기본 차 블루투스 이름(선택).
+# 비워 두면 앱의 설정 > 내 차 에서 페어링 목록 중 하나를 고를 때까지 주차 자동 저장이 꺼져 있습니다.
+# 빌드 때 -Ppinback.defaultCarName="My Car" 로 넘겨도 됩니다.
+pinback.defaultCarName=

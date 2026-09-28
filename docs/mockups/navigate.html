@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="shot" content="w=1600,h=1000,scale=2">
+<title>길찾기와 공유</title>
+<link rel="stylesheet" href="https://mockup-kit.invalid/kit.css">
+<script src="https://mockup-kit.invalid/kit.js"></script>
+<link rel="stylesheet" href="_app.css">
+<style>
+  .layout { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; gap:48px; }
+  .side { width:520px; display:flex; flex-direction:column; gap:14px; }
+  .dec { border:1px solid var(--border); background:var(--raised); border-radius:14px; padding:16px 18px; display:flex; flex-direction:column; gap:10px; }
+  .dec .q { font-size:15px; font-weight:700; }
+  .br { display:flex; align-items:center; gap:12px; font-size:14px; line-height:20px; }
+  .br .c { width:190px; flex:none; color:var(--dim); }
+  .br .to { display:flex; align-items:center; gap:8px; font-weight:600; }
+  .br .to .i { color:var(--accent); }
+  .code { font-family: ui-monospace, Menlo, monospace; font-size:12.5px; color:var(--dim); }
+  .sharebox { font-family: ui-monospace, Menlo, monospace; font-size:12.5px; line-height:20px; background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:10px 12px; white-space:pre; overflow:hidden; }
+</style>
+</head><body>
+<div class="canvas app-pinback desk-accent">
+  <div class="layout">
+    <div>
+      <div class="fold-open dark" style="--zoom:.78">
+        <div class="screen">
+          <div class="status-bar" data-time="7:15"></div>
+          <div class="app-bar">
+            <img class="mark" data-app="pinback" alt="">
+            <span class="title">핀백</span>
+            <span class="spacer"></span>
+            <span class="icon-btn"><i data-icon="settings"></i></span>
+            <span class="theme-btn"><i data-icon="moon"></i><span>자동</span></span>
+          </div>
+          <div class="two-pane list-detail">
+            <div class="pane">
+              <div class="savebtn"><i data-pi="map-pin-plus"></i>지금 위치 저장</div>
+              <div class="lbl">저장한 장소 3곳</div>
+              <div class="prow park sel"><div class="tile"><i data-pi="car"></i></div><div class="grow" style="min-width:0"><div class="nm">행복마트 주차장 B2</div><div class="mt">40분 전 · 여기서 310m</div></div><span class="pill park">주차</span></div>
+              <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">민지랑 만날 카페</div><div class="mt">어제 · 2.1km</div></div></div>
+              <div class="prow"><div class="tile"><i data-icon="map-pin"></i></div><div class="grow" style="min-width:0"><div class="nm">처음 가 본 국숫집</div><div class="mt">3일 전 · 4.8km</div></div></div>
+            </div>
+            <div class="pane" style="gap:10px">
+              <div class="row" style="align-items:flex-start"><div class="grow"><div class="dh">행복마트 주차장 B2</div><div class="dsub">40분 전 저장 · 여기서 310m</div></div><span class="pill park" style="margin-top:4px">주차</span></div>
+              <div class="navbtn"><i data-pi="navigation"></i>길찾기</div>
+              <div class="acts"><div class="obtn"><i data-pi="camera"></i>사진</div><div class="obtn" style="border-color:var(--accent); color:var(--accent)"><i data-icon="share"></i>공유</div><div class="obtn"><i data-icon="pencil"></i>고치기</div></div>
+              <div class="lbl">사진 2장</div>
+              <div class="row" style="gap:8px"><div class="photo" style="flex:1"><div class="pillar">C-14</div></div><div class="photo" style="flex:1"><div class="pillar">B2</div></div></div>
+              <div class="lbl">위치</div>
+              <div class="info">
+                <div class="r"><i data-pi="locate"></i><span class="k">좌표</span><span class="v">37.500000, 127.000000</span></div>
+                <div class="r"><i data-icon="map-pin"></i><span class="k">오차</span><span class="v">약 8m</span></div>
+                <div class="r"><i data-icon="clock"></i><span class="k">저장</span><span class="v">오후 6:35</span></div>
+              </div>
+              <div class="hint">저장하기 직전에 폰이 알던 위치를 썼어요. 지하 주차장에선 이게 더 정확해요.</div>
+            </div>
+          </div>
+          <div class="nav-handle"></div>
+        </div>
+      </div>
+      <div class="device-label">펼친 화면 · 장소 상세</div>
+    </div>
+
+    <div class="side">
+      <div class="cap-title">도보 길찾기는 지도 앱에 맡긴다</div>
+      <div class="cap-sub">핀백은 지도를 직접 그리지 않습니다. 저장한 좌표를 가장 알맞은 지도 앱의 도보 길찾기로 넘깁니다.</div>
+      <div class="dec">
+        <div class="q">「길찾기」를 누르면</div>
+        <div class="br"><span class="c">국내 좌표 + 네이버 지도 설치</span><span class="to"><i data-icon="arrow-right"></i>네이버 지도 도보</span></div>
+        <div class="br"><span class="c">해외이거나 네이버 지도 없음</span><span class="to"><i data-icon="arrow-right"></i>Google 지도 도보</span></div>
+        <div class="br"><span class="c">둘 다 없음</span><span class="to"><i data-icon="arrow-right"></i>geo: 링크(아무 지도 앱)</span></div>
+      </div>
+      <div class="dec">
+        <div class="q">「공유」를 누르면</div>
+        <div class="p hint" style="padding:0">받는 사람이 어떤 지도를 쓰든 열리게 링크 두 개를 붙여요.</div>
+        <div class="sharebox">행복마트 주차장 B2
+엘리베이터 앞에서 두 번째 칸
+https://www.google.com/maps/search/?api=1&amp;query=…
+https://map.naver.com/p/search/…</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="_icons.js"></script>
+</body></html>
