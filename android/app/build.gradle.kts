@@ -40,7 +40,7 @@ android {
     buildTypes { release { isMinifyEnabled = false } }
 }
 
-// 준랩 폴드 패밀리(관제실·기록·에이전트·폴드 마이크)와 같은 Compose 묶음. 저장소는 JSON 파일 하나 — Room 없음.
+// 저장소는 JSON 파일 하나 — Room 없음.
 // BOM 2026.08+ 는 compileSdk 37 을 요구한다 — 2026.06.01 고정.
 dependencies {
     implementation(platform("androidx.compose:compose-bom:2026.06.01"))

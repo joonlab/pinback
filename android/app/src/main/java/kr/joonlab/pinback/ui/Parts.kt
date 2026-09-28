@@ -50,7 +50,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kr.joonlab.pinback.R
 
-// ───────── 준랩 폴드 패밀리 컴포넌트 문법(DESIGN-GUIDE §4) — 토큰 P 로만 칠한다 ─────────
+// ───────── 공통 컴포넌트 — 토큰 P 로만 칠한다 ─────────
 
 /** 카드 = panel 면 + 1dp 테두리 + 모서리 14. 강조는 면 물들이기(tint)로. 그림자 없음.
  *  모서리는 두 가지만: 카드 14 · 카드 안의 타일·상자 10 (알약·스위치는 완전 둥글게). */

@@ -22,7 +22,7 @@ import androidx.core.view.WindowCompat
 import kr.joonlab.pinback.R
 
 /**
- * 준랩 폴드 패밀리 팔레트 인터페이스 — 관제실 core `CorePalette` 와 같은 역할 10개.
+ * 팔레트 인터페이스 — 역할 10개.
  * 앱마다 바뀌는 건 accent 하나(핀백 = 스카이→블루).
  */
 interface Pal {
@@ -40,7 +40,7 @@ interface Pal {
 
 /**
  * getter 로 [ThemeMode.dark] 를 읽는다 — 테마를 바꾸면 읽은 자리만 다시 그려진다.
- * 값은 DESIGN-GUIDE §1-3 「주차 위치 화면」 블루 표 그대로(핀백이 그 화면에서 독립한 앱이다).
+ * 값은 ClipBridge 「주차 위치」 화면의 블루 팔레트 그대로(핀백이 그 화면에서 독립한 앱이다).
  * 대비(WCAG 계산): accent/bg 6.42 · 7.60 · onAccent/accent 6.70 · 6.78 · dim/bg 6.11 · 7.64 — 전부 AA.
  */
 object P : Pal {
@@ -60,7 +60,7 @@ object P : Pal {
     val gradA = Color(0xFF60A5FA)
     val gradB = Color(0xFF1D4ED8)
 
-    // 의미색(관제실 값) — 면 물들이기·작은 아이콘·점에만
+    // 의미색 — 면 물들이기·작은 아이콘·점에만
     val ok get() = t(0xFF1A7F3C, 0xFF5ED18A)
     val warn get() = t(0xFF8A6100, 0xFFD9AE45)
     val warnText get() = t(0xFF6B4C00, 0xFFE6C97E)
@@ -73,7 +73,7 @@ object P : Pal {
     val onScrim = Color(0xFFFFFFFF)
 }
 
-/** 테마는 셋을 돈다: system(폰 설정 추종) → light → dark. 관제실 core ThemeMode 와 같다. */
+/** 테마는 셋을 돈다: system(폰 설정 추종) → light → dark. */
 object ThemeMode {
     const val PREFS = "ui"
     var mode by mutableStateOf("system")

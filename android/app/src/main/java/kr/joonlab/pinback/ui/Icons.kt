@@ -21,7 +21,7 @@ import androidx.compose.ui.graphics.vector.PathParser
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
-// lucide 선 아이콘(ISC) 중 쓰는 것만 — 관제실 core/Icons.kt 방식(24×24, stroke 2, round).
+// lucide 선 아이콘(ISC) 중 쓰는 것만 (24×24, stroke 2, round).
 // material-icons 의존을 넣지 않으려고 path 를 직접 둔다.
 private val PATHS: Map<String, List<String>> = mapOf(
     "sun" to listOf("M8 12a4 4 0 1 0 8 0a4 4 0 1 0 -8 0", "M12 2v2", "M12 20v2", "m4.93 4.93 1.41 1.41", "m17.66 17.66 1.41 1.41",
